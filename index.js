@@ -15,8 +15,9 @@ var app = express();
 app.use(morgan("combined"));
 
 // Set application properties
-app.set("host", process.env.HOST || "0.0.0.0");
-app.set("port", process.env.PORT0 || 3000);
+//app.set("host", process.env.HOST || "0.0.0.0");
+//app.set("port", process.env.PORT0 || 3000);
+app.set("host", process.env.HOST || "gentle-crag-29437.herokuapp.com");
 app.set("x-powered-by", false);
 app.set("etag", false);
 
