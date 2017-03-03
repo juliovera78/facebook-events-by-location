@@ -15,9 +15,9 @@ var app = express();
 app.use(morgan("combined"));
 
 // Set application properties
-//app.set("host", process.env.HOST || "0.0.0.0");
+//app.set("host", intense-fortress-93722 || "0.0.0.0");
 //app.set("port", process.env.PORT0 || 3000);
-app.set("host","dry-earth-84495.herokuapp.com");
+app.set("host","intense-fortress-93722 || intense-fortress-93722");
 app.set("x-powered-by", false);
 app.set("etag", false);
 
