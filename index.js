@@ -9,15 +9,21 @@ var cors = require("cors");
 var EventSearch = require("facebook-events-by-location-core");
 
 // Create the Express object
+var express = require('express');
 var app = express();
+
+
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
+
 
 // Use morgan for logging
 app.use(morgan("combined"));
 
 // Set application properties
 //app.set("host", intense-fortress-93722 || "0.0.0.0");
-app.set("host", process.env.HOST || "0.0.0.0");
-app.set("port", process.env.PORT0 || 3000);
+//app.set("host", process.env.HOST || "0.0.0.0");
+//app.set("port", process.env.PORT0 || 3000);
 //app.set("host","process.env.HOST || intense-fortress-93722");
 app.set("x-powered-by", false);
 app.set("etag", false);
